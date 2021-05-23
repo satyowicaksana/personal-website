@@ -3,7 +3,6 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: @background-color;
 }
 
 .app-content-wrapper {
@@ -111,15 +110,13 @@ a.ant-typography-warning {
 
 // avatar
 
-.ant-avatar {
-  border: solid 3px @primary-color;
-}
-
 .ant-avatar-lg {
   width: 80px;
   height: 80px;
   line-height: 40px;
-  border-radius: 50%;
+}
+.ant-avatar-square {
+  border-radius: 16px;
 }
 
 // tag
@@ -368,6 +365,33 @@ a.ant-typography-warning {
   height: @navbar-height;
   background-color: @primary-color;
 }
+.glass {
+  box-shadow: @box-shadow;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.image-icon {
+  width: 32px;
+}
+.custom-scrollbar {
+  /* width */
+  &::-webkit-scrollbar {
+    height: 4px;
+  }
+  
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: @primary-color; 
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: @primary-color; 
+  }
+}
 
 // button
 
@@ -558,6 +582,11 @@ a.ant-typography-warning {
 .py-4 {
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.px-4 {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .pt-4 {

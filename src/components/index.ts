@@ -1,5 +1,6 @@
 import AnimeCard from './AnimeCard'
 import AnimeCardsSection from './AnimeCardsSection'
+import ExperienceCard from './ExperienceCard'
 import ArticleCard from './ArticleCard'
 import BannerCarousel from './BannerCarousel'
 import Carousel from './Carousel'
@@ -16,6 +17,7 @@ import TopicCard from './TopicCard'
 export {
   AnimeCard,
   AnimeCardsSection,
+  ExperienceCard,
   ArticleCard,
   BannerCarousel,
   Carousel,

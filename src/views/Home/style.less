@@ -1,6 +1,11 @@
 @import 'lib.less';
 
+.container {
+  overflow: hidden;
+}
 .banner-container {
+  background-color: @primary-color-darkest;
+  min-height: 100vh;
 }
 .banner-background {
   filter: blur(60px);
@@ -37,4 +42,78 @@
 }
 .banner-illustration {
   width: 100%;
+}
+
+.experience-container {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 100px;
+}
+.experience-view-transition {
+  position: absolute;
+  top: 0;
+  height: 100px;
+  width: 100%;
+  background-color: @primary-color-darkest;
+  z-index: -1;
+}
+.experience-view-transition-white {
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  border-radius: 50%;
+  z-index: -1;
+}
+.experience-about-card {
+  position: absolute;
+  top: -10px;
+  width: 550px;
+  background-color: white;
+  border-radius: 16px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.experience-avatar {
+  width: 68px !important;
+  height: 68px !important;
+}
+.experience-cards-container {
+  transition: all 0.2s linear;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  &:not(:hover) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.experience-cards-divider {
+  width: 30px !important;
+}
+.experience-background {
+  filter: blur(60px);
+}
+.experience-blob {
+  position: absolute;
+  opacity: 0.5;
+  top: 10vw;
+  left: -10vw;
+  z-index: -1;
+  height: 20vw;
+  width: 20vw;
+  background-color: @primary-color;
+  z-index: -1;
+}
+.experience-blob-2 {
+  position: absolute;
+  opacity: 0.3;
+  top: -12vw;
+  right: -10vw;
+  z-index: -1;
+  height: 30vw;
+  width: 30vw;
+  background-color: @secondary-color;
+  z-index: -1;
 }
