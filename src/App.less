@@ -2,7 +2,8 @@
 @import '~antd/dist/antd.less';
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: @background-color;
 }
 
 .app-content-wrapper {
@@ -26,7 +27,7 @@ h1, h2, h3, h4, h5 {
 //typography
 
 .ant-typography {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 0 !important;
 }
 
@@ -223,6 +224,14 @@ a.ant-typography-warning {
   font-weight: 800 !important;
   display: flex;
   align-items: center;
+}
+
+.ant-btn-primary {
+  background: @primary-gradient-color;
+  background-color: @primary-color;
+  :not(:active) {
+    box-shadow: 10px 20px 40px -10px @primary-color !important;
+  }
 }
 
 .ant-btn-default {

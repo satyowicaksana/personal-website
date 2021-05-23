@@ -1,1 +1,40 @@
 @import 'lib.less';
+
+.banner-container {
+}
+.banner-background {
+  filter: blur(60px);
+}
+.banner-blob {
+  position: absolute;
+  opacity: 0.3;
+  top: -10vw;
+  left: -10vw;
+  z-index: -1;
+  height: 20vw;
+  width: 20vw;
+  background-color: @primary-color;
+  z-index: -1;
+}
+.banner-content-container {
+  padding-top: 8vw;
+}
+.banner-title {
+  font-size: 72px !important;
+}
+.banner-subtitle {
+  margin-top: 0 !important;
+}
+.banner-profile-container {
+  height: 20vw;
+  width: 100%;
+  background: rgba( 255, 255, 255, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba(31, 131, 135, 0.37);
+  backdrop-filter: blur( 5.0px );
+  -webkit-backdrop-filter: blur( 5.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.banner-illustration {
+  width: 100%;
+}

@@ -44,7 +44,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className={`navbar-wrapper ${(scrollY > 1) ? 'bg-primary' : ''} py-2`}>
+    {/*<div className={`navbar-wrapper ${(scrollY > 1) ? 'bg-primary' : ''} py-2`}>
       <div className='content-container'>
         <Row align='middle' justify='space-between'>
           <Col onClick={() => history.push('/')} className='clickable'>
@@ -97,7 +97,7 @@ const Navbar = () => {
         </Row>
       </div>
     </div>
-    <LoginModal visible={isLoginModalVisible} onCancel={() => setIsLoginModalVisible(false)}/>
+    <LoginModal visible={isLoginModalVisible} onCancel={() => setIsLoginModalVisible(false)}/>*/}
     </>
   );
 }
