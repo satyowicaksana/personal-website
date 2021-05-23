@@ -1,0 +1,52 @@
+@import 'lib.less';
+
+.register-form-container {
+  -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.2);
+  z-index: 1;
+  background-color: rgba(255,255,255,0.6);
+  min-height: 100vh !important;
+}
+
+.register-form-content-container {
+  height: 100%;
+}
+
+.register-banner-container {
+  min-height: 100vh !important;
+  background: @primary-gradient-color;
+  overflow: hidden;
+
+  @media @sm, @xs {
+    display: none;
+  }
+}
+
+.register-illustration {
+  @media @md, @lg, @xl {
+    max-width: 240px;
+  }
+}
+
+.register-banner-title {
+  @media @md {
+    display: none;
+  }
+}
+
+.register-banner-description {
+  margin: 0 !important;
+}
+
+.register-banner-blur-blob {
+  height: 400px;
+  width: 400px;
+  background-color: @primary-color;
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(120px);
+}
