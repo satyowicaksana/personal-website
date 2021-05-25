@@ -43,9 +43,11 @@ const Home = () => {
           <div className='content-container'>
             <Row align='middle' gutter={40} wrap={false}  className='banner-content-container'>
               <Col span={14}>
-                <Title type='secondary' className='banner-title'>FRONT-END DEVELOPER</Title>
-                <Title type='secondary' className='banner-subtitle typography-fade mb-4'>Satyo Wicaksana</Title>
-                <Button type='primary' size='large'>Get In Touch 👋</Button>
+                <Text type='secondary'>Hello World, I'm</Text>
+                <Title type='secondary' className='banner-title'>Satyo Wicaksana</Title>
+                <Title type='secondary' className='banner-subtitle typography-fade'>FRONT-END DEVELOPER</Title>
+                <Text type='secondary' className='typography-fade'>based in Jakarta, Indonesia. Specialised in web development using React.</Text>
+                <Button type='primary' size='large' className='mt-4'>Get In Touch 👋</Button>
               </Col>
               <Col flex='auto'>
                 <img src={frontEndIllustration} alt='' onClick={() => window.open('https://www.freepik.com/vectors/website', '_blank')} className='banner-illustration'/>
@@ -68,29 +70,28 @@ const Home = () => {
             </Col>
             <Col>
               <Text>
-                Hi! 👋 I'm a front-end developer and I have experience mostly in <Text strong>web development</Text> using <Text strong>React</Text>. 😎 That being said, I have also worked on mobile development, and back-end stuff. 👌
+                Hi! 👋 I'm a front-end developer and I have experience mostly in <Text strong>web development</Text> using <Text strong>React</Text>. 😎 That being said, I also have worked on mobile development, and back-end stuff. 👌
               </Text>
             </Col>
           </Row>
         </div>
         <div className='centered-flex pt-4'>
           <div className='content-container'>
-            <Title>Experience & Education</Title>
-          </div>
-        </div>
-        <div className='experience-cards-container custom-scrollbar py-2 px-5'>
-          <Row align='middle' gutter={16} wrap={false}>
+            <Title className='mb-4'>Experience & Education</Title>
+            <Row align='middle' gutter={16}>
             {experiences.map((experience, i) => (
-              <>
-                <Col>
-                  <ExperienceCard key={i} experience={experience}/>
-                </Col>
-                <Col>
-                  <Divider className='experience-cards-divider'/>
-                </Col>
-              </>
+              <Col key={i} className='mb-2'>
+                <ExperienceCard key={i} experience={experience}/>
+              </Col>
             ))}
           </Row>
+          </div>
+        </div>
+      </div>
+      <div className='skills-container centered-flex'>
+        <div className='content-container py-5'>
+          <Title>Skills</Title>
+          <p></p>
         </div>
       </div>
     </div>
