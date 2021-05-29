@@ -25,7 +25,7 @@ const Animated = ({
 
   return (
     
-    <div ref={elementRef} className={`animated-container ${isVisible ? animation : ''}`} {...props}/>
+    <div ref={elementRef} className={`animated-container ${animation} ${isVisible ? 'visible' : ''}`} {...props}/>
   );
 }
 

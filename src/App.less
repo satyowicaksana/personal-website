@@ -17,10 +17,6 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-weight: bolder !important;
-
-  @media @sm, @xs {
-    font-size: 16px !important;
-  }
 }
 
 //typography
@@ -291,6 +287,7 @@ a.ant-typography-warning {
 
 .centered-flex {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -305,8 +302,12 @@ a.ant-typography-warning {
 .content-container {
   width: 100%;
   max-width: 1200px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  @media @sm, @xs {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .desktop {
@@ -394,6 +395,9 @@ a.ant-typography-warning {
 }
 .full-width {
   width: 100%;
+}
+.wrap-word {
+  white-space: nowrap;
 }
 
 // button
@@ -537,6 +541,10 @@ a.ant-typography-warning {
   padding-right: 40px;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 .my-4 {
   margin-top: 32px;
   margin-bottom: 32px;
@@ -617,5 +625,29 @@ a.ant-typography-warning {
 .sm-mb-2 {
   @media @sm, @xs {
     margin-bottom: 16px !important;
+  }
+}
+
+.sm-mb-5 {
+  @media @sm, @xs {
+    margin-bottom: 40px !important;
+  }
+}
+
+.md-p-1 {
+  @media @md, @sm, @xs {
+    padding: 8px;
+  }
+}
+
+.md-mb-0 {
+  @media @md, @sm, @xs {
+    margin-bottom: 0 !important;
+  }
+}
+
+.md-mb-5 {
+  @media @md, @sm, @xs {
+    margin-bottom: 40px !important;
   }
 }

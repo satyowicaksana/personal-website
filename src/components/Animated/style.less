@@ -1,9 +1,17 @@
 @import 'lib.less';
 
 .animated-container {
-  transition: all 0.2s ease;
-  opacity: 0;
-}
-.fade {
-  opacity: 1;
+  transition: all 0.3s ease;
+  &.fade {
+    opacity: 0;
+    &.visible {
+      opacity: 1;
+    }
+  }
+  &.scaled {
+    transform: scale(0.9);
+    &.visible {
+      transform: scale(1);
+    }
+  }
 }

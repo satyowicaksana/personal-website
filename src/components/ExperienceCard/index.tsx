@@ -39,16 +39,16 @@ const ExperienceCard = ({
     
     <div className='experience-card-container glass p-2'>
       <div>
-        <Row gutter={16} className='mb-1'>
+        <Row wrap={false} gutter={16} className='mb-1'>
           <Col>
-            <Avatar src={experience.src} shape='square'/>
+            <Avatar src={experience.src}/>
           </Col>
           <Col>
             <Title level={5}>{experience.title}</Title>
           </Col>
         </Row>
         <Text className='typography-block mb-1'><Link strong>{experience.company}</Link> <Text className='typography-fade'>- {experience.type}</Text></Text>
-        <Paragraph>{experience.description}</Paragraph>
+        <Paragraph className='typography-block mb-1'>{experience.description}</Paragraph>
       </div>
       <div>
         <Text strong className='typography-fade'>{experience.date}</Text>
