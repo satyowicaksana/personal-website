@@ -21,12 +21,15 @@ import {
   getCurrentSeason,
   getTopAiringAnimes
 } from 'store/anime'
-import { Button, Col, Divider, Row, Skeleton, Steps, Typography } from 'antd';
+import { Button, Col, Divider, Row, Skeleton, Steps, Typography, Progress } from 'antd';
 import { useWindowSize } from 'hooks';
 import { windowSizes } from 'consts';
 import { frontEndIllustration } from 'assets/images';
 import Avatar from 'antd/lib/avatar/avatar';
-import { experiences } from './consts';
+import { experiences, toolImages, tools } from './consts';
+import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiReact, SiRedux, SiStyledComponents, SiNodeDotJs, SiPostgresql, SiMongodb } from 'react-icons/si';
+import { FaLess } from 'react-icons/fa';
+import { AiOutlineAntDesign } from 'react-icons/ai';
 
 const { Title, Text, Paragraph, Link } = Typography
 const { Step } = Steps
@@ -47,7 +50,7 @@ const Home = () => {
                 <Title type='secondary' className='banner-title'>Satyo Wicaksana</Title>
                 <Title type='secondary' className='banner-subtitle typography-fade'>FRONT-END DEVELOPER</Title>
                 <Text type='secondary' className='typography-fade'>based in Jakarta, Indonesia. Specialised in web development using React.</Text>
-                <Link href="https://api.whatsapp.com/send?phone=+628111828395"><Button type='primary' size='large' className='mt-4'>Get In Touch 👋</Button></Link>
+                <Link href='https://api.whatsapp.com/send?phone=+628111828395' target='_blank'><Button type='primary' size='large' className='mt-4'>Get In Touch 👋</Button></Link>
               </Col>
               <Col flex='auto'>
                 <img src={frontEndIllustration} alt='' onClick={() => window.open('https://www.freepik.com/vectors/website', '_blank')} className='banner-illustration'/>
@@ -91,6 +94,52 @@ const Home = () => {
       <div className='tools-container centered-flex'>
         <div className='content-container py-5'>
           <Title className='mb-4'>Tools</Title>
+          <Row wrap={false} gutter={40} justify='space-between'>
+            <Col>
+              <div className='mb-2'>
+                <Text className='typography-fade typography-block'>Languange</Text>
+                <Text>Just like a normal front-end developer, I'm familiar with <Link strong><SiHtml5/> HTML</Link>, <Link strong><SiJavascript/> Javascript</Link>, and <Link strong><SiCss3/>CSS</Link>.<br></br>
+                I also prefer to use <Link strong><SiTypescript/> Typescript</Link> for better development experience.</Text>
+              </div>
+              <div className='mb-2'>
+                <Text className='typography-fade typography-block'>Framework/Library</Text>
+                <Text>So far I used <Link strong><SiReact/> React</Link> in every front-end development work I did.<br></br>
+                Along with <Link strong><SiRedux/> Redux</Link> for state management.</Text>
+              </div>
+              <div className='mb-2'>
+                <Text className='typography-fade typography-block'>Styling Tools</Text>
+                <Text>Normal CSS is enough but I usually use <Link strong><FaLess/> LESS</Link> for better development experience.<br></br>
+                I also have experience using <Link strong><SiStyledComponents/> Styled Component</Link>.<br></br>
+                For CSS framework, I go with  <Link strong><AiOutlineAntDesign/> Ant Design</Link>. It has a lot of components and they are easy to customize.</Text>
+              </div>
+              <div>
+                <Text className='typography-fade typography-block'>Back-End Environment</Text>
+                <Text>I learned back-end development and I'm familiar with <Link strong><SiNodeDotJs/> Node</Link>.<br></br>
+                For DBMS, I learned <Link strong><SiPostgresql/> PostgreSQL</Link> and <Link strong><SiMongodb/> MongoDB</Link>.
+                </Text>
+              </div>
+            </Col>
+            <Col>
+              <div className='tools-circle-container'>
+                <div className='tools-circle-colored'/>
+                <div className='tools-circle-colored-2'/>
+                <div className='tools-circle glass'/>
+                <div className='tools-circle-2 glass'/>
+                <div className='tools-circle-3 glass'/>
+                <Row>
+                  {toolImages.map(image => (
+                    <Col key={image.name} span={8} className='centered-flex tool-col'>
+                      {image.src && (
+                        <div className='tool-circle glass centered-flex p-3'>
+                          <img src={image.src} alt={image.name} className='full-width'/>
+                        </div>
+                      )}
+                    </Col>
+                  ))}
+                </Row>
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
       <div className='portfolio-container centered-flex'>
@@ -118,7 +167,8 @@ const Home = () => {
             </Col>
             <Col>
               <Paragraph>
-                This is my exercise back when I first learn React.<br></br>I just display data from a free API. 😄
+                This is my exercise back when I first learn React.<br></br>
+                I just display data from a free API. 😄
               </Paragraph>
             </Col>
           </Row>

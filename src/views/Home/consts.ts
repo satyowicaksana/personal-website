@@ -150,3 +150,49 @@ export const experiences: Experience[] = [
     stacks: []
   },
 ]
+
+export const toolImages = [
+  {
+    src: 'https://seeklogo.com/images/L/less-logo-AAE582C286-seeklogo.com.png',
+    name: 'Less'
+  },
+  {
+    src: 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg',
+    name: 'Ant Design'
+  },
+  {
+    src: '',
+    name: ''
+  },
+  {
+    src: 'https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png',
+    name: 'Typescript'
+  },
+  {
+    src: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png',
+    name: 'React'
+  },
+  {
+    src: 'https://cdn.iconscout.com/icon/free/png-512/redux-283024.png',
+    name: 'Redux'
+  },
+  {
+    src: '',
+    name: ''
+  },
+  {
+    src: '',
+    name: ''
+  },
+  {
+    src: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png',
+    name: 'Node'
+  },
+]
+
+export const tools = [
+  {
+    name: 'HTML, Javascript, CSS',
+    score: 90
+  }
+]
