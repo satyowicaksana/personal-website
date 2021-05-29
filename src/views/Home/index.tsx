@@ -22,22 +22,38 @@ import {
   getTopAiringAnimes
 } from 'store/anime'
 import { Button, Col, Divider, Row, Skeleton, Steps, Typography, Progress } from 'antd';
-import { useWindowSize } from 'hooks';
+import { useScroll, useWindowSize } from 'hooks';
 import { windowSizes } from 'consts';
 import { frontEndIllustration } from 'assets/images';
 import Avatar from 'antd/lib/avatar/avatar';
-import { experiences, toolImages, tools } from './consts';
+import { navbarLinks, experiences, toolImages } from './consts';
 import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiReact, SiRedux, SiStyledComponents, SiNodeDotJs, SiPostgresql, SiMongodb } from 'react-icons/si';
 import { FaLess } from 'react-icons/fa';
-import { AiOutlineAntDesign } from 'react-icons/ai';
+import { AiOutlineAntDesign, AiOutlineMail, AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 const { Title, Text, Paragraph, Link } = Typography
 const { Step } = Steps
 
 const Home = () => {
+  const { scrollY, scrollDirection } = useScroll()
 
   return (
     <div className='container'>
+      <div className={`navbar-container centered-flex ${scrollY > 8 ? 'overlay' : ''} ${scrollDirection === 'down' ? 'hide' : ''}`}>
+        <div className='content-container py-2'>
+          <Row justify='end'>
+            <Col>
+              <Row gutter={32}>
+                {navbarLinks.map(link => (
+                  <Col key={link.value}>
+                    <Link onClick={() => document.getElementById(link.value)?.scrollIntoView({behavior: 'smooth'})}>{link.label}</Link>
+                  </Col>
+                ))}
+              </Row>
+            </Col>
+          </Row>
+        </div>
+      </div>
       <div className='banner-container'>
         <div className='banner-background'>
           <div className='banner-blob'/>
@@ -59,7 +75,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='experience-container'>
+      <div id='experience' className='experience-container'>
         <div className='experience-background'>
           <div className='experience-blob'/>
           <div className='experience-blob-2'/>
@@ -83,7 +99,7 @@ const Home = () => {
             <Title className='mb-4'>Experience & Education</Title>
             <Row align='middle' gutter={16}>
             {experiences.map((experience, i) => (
-              <Col key={i} span={8} className='mb-2'>
+              <Col key={experience.date} span={8} className='mb-2'>
                 <ExperienceCard key={i} experience={experience}/>
               </Col>
             ))}
@@ -91,7 +107,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='tools-container centered-flex'>
+      <div id='tools' className='tools-container centered-flex'>
         <div className='content-container py-5'>
           <Title className='mb-4'>Tools</Title>
           <Row wrap={false} gutter={40} justify='space-between'>
@@ -142,7 +158,7 @@ const Home = () => {
           </Row>
         </div>
       </div>
-      <div className='portfolio-container centered-flex'>
+      <div id='portfolio' className='portfolio-container centered-flex'>
         <div className='content-container py-5'>
           <Title className='mb-4'>Portfolio</Title>
           <Row align='middle' gutter={40} wrap={false} className='mb-5'>
@@ -173,6 +189,40 @@ const Home = () => {
             </Col>
           </Row>
           <p></p>
+        </div>
+      </div>
+      <div id='footer' className='footer-container centered-flex'>
+        <div className='content-container py-5'>
+          <Row justify='space-between'>
+            <Col>
+              <Text type='secondary' strong className='typography-fade'>Satyo Wicaksana</Text>
+            </Col>
+            <Col>
+              <Text type='secondary' className='typography-block mb-2'>Let's talk business. 💼</Text>
+              <Row gutter={8}>
+                <Col>
+                  <Title>
+                    <Link href='mailto:satyowicaksana@gmail.com'><AiFillMail/></Link>
+                  </Title>
+                </Col>
+                <Col>
+                  <Title>
+                    <Link href='https://api.whatsapp.com/send?phone=+628111828395' target='_blank'><AiOutlineWhatsApp/></Link>
+                  </Title>
+                </Col>
+                <Col>
+                  <Title>
+                    <Link><AiFillLinkedin/></Link>
+                  </Title>
+                </Col>
+                <Col>
+                  <Title>
+                    <Link><AiFillGithub/></Link>
+                  </Title>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>

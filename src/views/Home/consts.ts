@@ -1,5 +1,24 @@
 import { Experience } from 'interfaces';
 
+export const navbarLinks = [
+  {
+    value: 'experience',
+    label: 'Experience'
+  },
+  {
+    value: 'tools',
+    label: 'Tools'
+  },
+  {
+    value: 'portfolio',
+    label: 'Portfolio'
+  },
+  {
+    value: 'footer',
+    label: 'Contact'
+  }
+]
+
 export const experiences: Experience[] = [
   {
     title: 'Software Engineer',
@@ -162,7 +181,7 @@ export const toolImages = [
   },
   {
     src: '',
-    name: ''
+    name: 'Empty 1'
   },
   {
     src: 'https://cdn.iconscout.com/icon/free/png-512/typescript-1174965.png',
@@ -178,11 +197,11 @@ export const toolImages = [
   },
   {
     src: '',
-    name: ''
+    name: 'Empty 2'
   },
   {
     src: '',
-    name: ''
+    name: 'Empty 3'
   },
   {
     src: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png',

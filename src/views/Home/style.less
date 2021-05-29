@@ -3,6 +3,20 @@
 .container {
   overflow: hidden;
 }
+.navbar-container {
+  transition: all 0.2s linear;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: @color-transparent;
+  top: 0;
+  &.overlay {
+    background-color: @primary-color-darkest-opaque;
+  }
+  &.hide {
+    top: -54px;
+  }
+}
 .banner-container {
   background-color: @primary-color-darkest;
   min-height: 100vh;
@@ -179,4 +193,7 @@
 }
 .tool-col {
   margin-bottom: 50px;
+}
+.footer-container {
+  background-color: @primary-color-darkest;
 }
