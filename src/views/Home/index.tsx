@@ -109,7 +109,7 @@ const Home = () => {
               <Animated animation='fade'>
                 <div className='mb-2'>
                   <Text className='typography-fade typography-block'>Languange</Text>
-                  <Text>As a front-end developer, I'm familiar with <Text className='wrap-word'><Link strong className='tools-link-html'><SiHtml5/> HTML</Link>, <Link strong className='tools-link-js'><SiJavascript/> Javascript</Link>, and <Link strong className='tools-link-css'><SiCss3/>CSS</Link>.</Text><br></br>
+                  <Text>As a front-end developer, I'm familiar with <Text className='wrap-word'><Link strong className='tools-link-html'><SiHtml5/> HTML</Link>, <Link strong className='tools-link-js'><SiJavascript/> Javascript</Link>, and <Link strong className='tools-link-css'><SiCss3/> CSS</Link>.</Text><br></br>
                   I also prefer to use <Link strong className='tools-link-ts'><SiTypescript/> Typescript</Link> <Text className='wrap-word'>for a better development experience.</Text></Text>
                 </div>
               </Animated>
