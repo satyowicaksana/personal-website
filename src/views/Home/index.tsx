@@ -50,7 +50,7 @@ const Home = () => {
                   <Text type='secondary'>Hello World, I'm</Text>
                   <Title type='secondary' className='banner-title'>Satyo Wicaksana</Title>
                   <Title type='secondary' className='banner-subtitle typography-fade'>FRONT-END DEVELOPER</Title>
-                  <Text type='secondary' className='typography-fade'>based in Jakarta, Indonesia. Specialised in web development using React.</Text>
+                  <Text type='secondary' className='typography-fade'>based in Jakarta, Indonesia.</Text>
                   <Link href='https://api.whatsapp.com/send?phone=+628111828395' target='_blank'><Button type='primary' size='large' className='mt-4'>Get In Touch 👋</Button></Link>
                 </Col>
                 <Col span={9} className='banner-illustration-container'>
@@ -71,17 +71,12 @@ const Home = () => {
         <Animated animation='fade'>
           <div className='experience-about-card glass p-2'>
             <Row gutter={16} wrap={false}>
+              <Col onClick={() => window.open('https://www.linkedin.com/in/satyowicaksana/', '_blank')}>
+                <Avatar src={avatar} className='experience-avatar clickable'/>
+              </Col>
               <Col>
-                <Avatar src={avatar} className='experience-avatar'/>
-              </Col>
-              <Col className='desktop'>
                 <Text>
-                  Hi! 👋 I'm a front-end developer and I have experience mostly in <Text strong>web development</Text> using <Text strong>React</Text>. 😎 That being said, I also have worked on mobile development, and back-end stuff. 👌
-                </Text>
-              </Col>
-              <Col className='mobile'>
-                <Text>
-                  Hi! 👋 I'm a front-end developer and I have experience mostly in <Text strong>web development</Text> using <Text strong>React</Text>. 😎
+                  Hi! 👋 I'm a front-end developer. I have experience in various software engineering work but mostly I do <Text strong className='wrap-word'>web development</Text> using <Text strong>React</Text>. 😎
                 </Text>
               </Col>
             </Row>
@@ -115,7 +110,7 @@ const Home = () => {
                 <div className='mb-2'>
                   <Text className='typography-fade typography-block'>Languange</Text>
                   <Text>As a front-end developer, I'm familiar with <Text className='wrap-word'><Link strong className='tools-link-html'><SiHtml5/> HTML</Link>, <Link strong className='tools-link-js'><SiJavascript/> Javascript</Link>, and <Link strong className='tools-link-css'><SiCss3/>CSS</Link>.</Text><br></br>
-                  I also prefer to use <Link strong className='tools-link-ts'><SiTypescript/> Typescript</Link> <Text className='wrap-word'>for better development experience.</Text></Text>
+                  I also prefer to use <Link strong className='tools-link-ts'><SiTypescript/> Typescript</Link> <Text className='wrap-word'>for a better development experience.</Text></Text>
                 </div>
               </Animated>
               <Animated animation='fade'>
