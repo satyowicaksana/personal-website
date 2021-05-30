@@ -26,7 +26,7 @@ const ExperienceCard = ({
             <Title level={5}>{experience.title}</Title>
           </Col>
         </Row>
-        <Text className='typography-block mb-1'><Link strong>{experience.company}</Link> <Text className='typography-fade'>- {experience.type}</Text></Text>
+        <Text className='typography-block mb-1'><Link href={experience.link} target='_blank' strong>{experience.company}</Link> <Text className='typography-fade'>- {experience.type}</Text></Text>
         <Paragraph className='typography-block mb-1'>{experience.description}</Paragraph>
       </div>
       <div>

@@ -179,7 +179,7 @@ const Home = () => {
             <Row align='middle' wrap={width <= windowSizes.sm.max} gutter={40} className='mb-5'>
               <Col xs={24} md={8} className='sm-mb-2'>
                 <Animated animation='fade scaled'>
-                  <div className='portfolio-image-container mal-redesign'>
+                  <div onClick={() => window.open('https://myanimelist-redesign.firebaseapp.com/', '_blank')} className='portfolio-image-container mal-redesign sm-mb-2'>
                     <img src={malRedesignMainPage} alt='' className='portfolio-image main'/>
                     <img src={malRedesignDetailPage} alt='' className='portfolio-image detail'/>
                   </div>
@@ -193,7 +193,7 @@ const Home = () => {
                   <Paragraph>
                     This is a simple website to show <Text className='wrap-word'>what I can do in web development.</Text><br></br>
                     The concept is a redesign of <Link strong href='https://myanimelist.net/' target='_blank'>MyAnimeList</Link>, <Text className='wrap-word'>an anime database</Text> <Text className='wrap-word'>and community website.</Text><br></br>
-                    I got the design inspiration from other similar site <Text className='wrap-word'>and from dribbble.</Text><br></br><br></br>
+                    I got the design inspiration from other <Link href='https://anilist.co/' target='_blank'>similar site</Link> <Text className='wrap-word'>and from <Link href='https://dribbble.com/shots/14879802-MyAnimeList-Website-Redesign' target='_blank'>dribbble</Link>.</Text><br></br><br></br>
                     I use <Link strong href='https://jikan.docs.apiary.io/' target='_blank'>Jikan API</Link> for the anime data and add some data with web scraping using Node. 😎<br></br><br></br>
                   </Paragraph>
                 </Animated>
@@ -207,9 +207,9 @@ const Home = () => {
               </Col>
             </Row>
             <Row align='middle' gutter={32} wrap={width <= windowSizes.sm.max} className='mb-5'>
-              <Col xs={12} md={6} className='sm-mb-2'>
+              <Col xs={16} md={6} className='sm-mb-2'>
                 <Animated animation='fade scaled'>
-                  <div className='portfolio-image-container shield-database'>
+                  <div onClick={() => window.open('https://shield-database.firebaseapp.com/', '_blank')} className='portfolio-image-container shield-database sm-mb-2'>
                     <img src={shieldDatabaseMainPage} alt='' className='portfolio-image main'/>
                     <img src={shieldDatabaseDetailPage} alt='' className='portfolio-image detail'/>
                   </div>

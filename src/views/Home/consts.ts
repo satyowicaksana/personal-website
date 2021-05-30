@@ -23,6 +23,7 @@ export const experiences: Experience[] = [
   {
     title: 'Software Engineer',
     src: 'https://yt3.ggpht.com/ytc/AAUvwnis_ocUytOqs0O_PLpYGe8emz0StqNfMG7uzINszw=s900-c-k-c0x00ffffff-no-rj',
+    link: 'https://www.grab.com/',
     company: 'Grab',
     type: 'Fulltime',
     date: 'Mar 2021 - Current',
@@ -31,6 +32,7 @@ export const experiences: Experience[] = [
   {
     title: 'Front-End Developer',
     src: 'https://media-exp1.licdn.com/dms/image/C510BAQFwga3eyy_uzA/company-logo_200_200/0/1519864309779?e=2159024400&v=beta&t=WMmihkb1XcJowNdLr6CiuJvXj9_Ewz0zFv3VY1uHbCQ',
+    link: 'http://www.rebelworks.co/',
     company: 'Rebelworks',
     type: 'Fulltime',
     date: 'Feb 2020 - Mar 2021',
@@ -39,6 +41,7 @@ export const experiences: Experience[] = [
   {
     title: 'Front-End Developer',
     src: 'https://media-exp1.licdn.com/dms/image/C4E0BAQHe_7Enxf9FGQ/company-logo_200_200/0?e=2159024400&v=beta&t=GJXWTQLKfUuj2qFi-Xc2wcFuSj6sZvPIbJ1rawWiro4',
+    link: 'https://www.softwareseni.co.id/',
     company: 'Software Seni',
     type: 'Freelance',
     date: 'Jan 2020 - Feb 2020',
@@ -47,6 +50,7 @@ export const experiences: Experience[] = [
   {
     title: 'Fullstack Immersive Student',
     src: 'https://pbs.twimg.com/profile_images/1303645505465974785/BAedfmOT.jpg',
+    link: 'https://www.hacktiv8.com/',
     company: 'Hacktiv8',
     type: 'Student',
     date: 'Jul 2019 - Des 2019',
@@ -54,7 +58,8 @@ export const experiences: Experience[] = [
   },
   {
     title: 'IT Consultant',
-    src: 'https://4.bp.blogspot.com/-Gofs7W3wCE8/WNzdcImzG9I/AAAAAAAAJjE/OsBi78jmW50OIlhgjDwzpKlTSskqbXRBgCLcB/s1600/-.png',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazkH4Wm_OT9lAMaop7XFTdL4Etbkcn8wvP3pSpU1Mg0tIzkdUvHDuAE-d1Rdc-ZWJZHU&usqp=CAU',
+    link: 'https://pusilkom.ui.ac.id/',
     company: 'Pusilkom UI',
     type: 'Fulltime',
     date: 'Okt 2018 - Jun 2019',
@@ -62,10 +67,20 @@ export const experiences: Experience[] = [
   },
   {
     title: 'Software Engineer',
-    src: 'https://4.bp.blogspot.com/-Gofs7W3wCE8/WNzdcImzG9I/AAAAAAAAJjE/OsBi78jmW50OIlhgjDwzpKlTSskqbXRBgCLcB/s1600/-.png',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazkH4Wm_OT9lAMaop7XFTdL4Etbkcn8wvP3pSpU1Mg0tIzkdUvHDuAE-d1Rdc-ZWJZHU&usqp=CAU',
+    link: 'https://pusilkom.ui.ac.id/',
     company: 'Pusilkom UI',
     type: 'Fulltime',
     date: 'Sep 2017 - Sep 2018',
+    description: 'Worked on multiple web developments.'
+  },
+  {
+    title: 'Information System Student',
+    src: 'https://4.bp.blogspot.com/-Gofs7W3wCE8/WNzdcImzG9I/AAAAAAAAJjE/OsBi78jmW50OIlhgjDwzpKlTSskqbXRBgCLcB/s1600/-.png',
+    link: 'https://cs.ui.ac.id/',
+    company: 'Universitas Indonesia',
+    type: 'Student',
+    date: '2013 - 2017',
     description: 'Worked on multiple web developments.'
   }
 ]
