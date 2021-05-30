@@ -54,7 +54,7 @@ export const experiences: Experience[] = [
     company: 'Hacktiv8',
     type: 'Student',
     date: 'Jul 2019 - Des 2019',
-    description: 'Learning fullstack javascript development.'
+    description: 'Learned fullstack javascript development.'
   },
   {
     title: 'IT Consultant',
@@ -81,7 +81,7 @@ export const experiences: Experience[] = [
     company: 'Universitas Indonesia',
     type: 'Student',
     date: '2013 - 2017',
-    description: 'Worked on multiple web developments.'
+    description: 'Learned Information System courses.'
   }
 ]
 

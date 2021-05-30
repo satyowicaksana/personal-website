@@ -125,7 +125,7 @@ const Home = () => {
                   <Text className='typography-fade typography-block'>Styling Tools</Text>
                   <Text>For now, I usually use <Link strong className='tools-link-less'><FaLess/> LESS</Link> <Text className='wrap-word'>for more convenient syntax.</Text><br></br>
                   I also have experience using <Text className='wrap-word'><Link strong className='tools-link-styled-components'><SiStyledComponents/> Styled Component</Link> in some work.</Text><br></br>
-                  For CSS framework, <Text className='wrap-word'>I go with  <Link strong className='tools-link-antd'><AiOutlineAntDesign/> Ant Design</Link>.</Text><br></br>It has a lot of components and they are<Text className='word-wrap'>easy to customize.</Text></Text>
+                  For CSS framework, <Text className='wrap-word'>I go with  <Link strong className='tools-link-antd'><AiOutlineAntDesign/> Ant Design</Link>.</Text><br></br>It has a lot of components and they are <Text className='word-wrap'>easy to customize.</Text></Text>
                 </div>
               </Animated>
               <Animated animation='fade'>
