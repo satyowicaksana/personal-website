@@ -25,7 +25,7 @@ import {
 import { Button, Col, Divider, Row, Skeleton, Steps, Typography, Progress } from 'antd';
 import { useScroll, useWindowSize } from 'hooks';
 import { windowSizes } from 'consts';
-import { avatar, frontEndIllustration } from 'assets/images';
+import { avatar, frontEndIllustration, malRedesignDetailPage, malRedesignMainPage, shieldDatabaseDetailPage, shieldDatabaseMainPage } from 'assets/images';
 import Avatar from 'antd/lib/avatar/avatar';
 import { navbarLinks, experiences, toolImages } from './consts';
 import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiReact, SiRedux, SiStyledComponents, SiNodeDotJs, SiPostgresql, SiMongodb } from 'react-icons/si';
@@ -202,10 +202,16 @@ const Home = () => {
             <Row align='middle' wrap={width <= windowSizes.sm.max} gutter={40} className='mb-5'>
               <Col xs={24} md={8} className='sm-mb-2'>
                 <Animated animation='fade scaled'>
-                  <img src='https://yt3.ggpht.com/ytc/AAUvwnis_ocUytOqs0O_PLpYGe8emz0StqNfMG7uzINszw=s900-c-k-c0x00ffffff-no-rj' alt='' className='portfolio-image'/>
+                  <div className='portfolio-image-container mal-redesign'>
+                    <img src={malRedesignMainPage} alt='' className='portfolio-image main'/>
+                    <img src={malRedesignDetailPage} alt='' className='portfolio-image detail'/>
+                  </div>
                 </Animated>
               </Col>
               <Col>
+                <Animated animation='fade'>
+                  <Title level={5} className='mb-2'>MyAnimeList Redesign</Title>
+                </Animated>
                 <Animated animation='fade'>
                   <Paragraph>
                     This is a simple website to show <Text className='wrap-word'>what I can do in web development.</Text><br></br>
@@ -224,13 +230,19 @@ const Home = () => {
                 </Animated>
               </Col>
             </Row>
-            <Row align='middle' gutter={20} wrap={width <= windowSizes.sm.max} className='mb-5'>
-              <Col xs={12} md={4} className='sm-mb-2'>
+            <Row align='middle' gutter={32} wrap={width <= windowSizes.sm.max} className='mb-5'>
+              <Col xs={12} md={6} className='sm-mb-2'>
                 <Animated animation='fade scaled'>
-                  <img src='https://yt3.ggpht.com/ytc/AAUvwnis_ocUytOqs0O_PLpYGe8emz0StqNfMG7uzINszw=s900-c-k-c0x00ffffff-no-rj' alt='' className='portfolio-image'/>
+                  <div className='portfolio-image-container shield-database'>
+                    <img src={shieldDatabaseMainPage} alt='' className='portfolio-image main'/>
+                    <img src={shieldDatabaseDetailPage} alt='' className='portfolio-image detail'/>
+                  </div>
                 </Animated>
               </Col>
               <Col>
+                <Animated animation='fade'>
+                  <Title level={5} className='mb-2'>SHIELD Database</Title>
+                </Animated>
                 <Animated animation='fade'>
                   <Paragraph className='mb-1'>
                     This is my exercise back when <Text className='wrap-word'>I first learn React.</Text><br></br>
