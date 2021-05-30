@@ -28,7 +28,7 @@ const Home = () => {
               <Row gutter={{xs: 12, sm: 12, md: 32}}>
                 {navbarLinks.map(link => (
                   <Col key={link.value}>
-                    <Link onClick={() => document.getElementById(link.value)?.scrollIntoView({behavior: 'smooth'})}>{link.label}</Link>
+                    <Link type='secondary' onClick={() => document.getElementById(link.value)?.scrollIntoView({behavior: 'smooth'})}>{link.label}</Link>
                   </Col>
                 ))}
               </Row>
@@ -66,8 +66,8 @@ const Home = () => {
           <div className='experience-blob'/>
           <div className='experience-blob-2'/>
         </div>
-        <div className='experience-view-transition'/>
-        <div className='experience-view-transition-white'/>
+        <div className='experience-curve'/>
+        <div className='experience-curve-white'/>
         <Animated animation='fade'>
           <div className='experience-about-card glass p-2'>
             <Row gutter={16} wrap={false}>
@@ -234,7 +234,7 @@ const Home = () => {
         <div className='content-container py-5'>
           <Animated animation='fade'>
             <Row justify='space-between'>
-              <Col span={width <= windowSizes.sm.max ? 24 : undefined} order={width <= windowSizes.sm.max ? 1 : 0} className='centered-flex'>
+              <Col span={width <= windowSizes.sm.max ? 24 : undefined} order={width <= windowSizes.sm.max ? 1 : 0} className='centered-flex-sm'>
                 <Text type='secondary' strong className='typography-fade'>Satyo Wicaksana</Text>
               </Col>
               <Col span={width <= windowSizes.sm.max ? 24 : undefined} className='centered-flex'>
