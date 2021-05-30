@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c3667f93.chunk.css",
-    "main.js": "/static/js/main.7d385b11.chunk.js",
-    "main.js.map": "/static/js/main.7d385b11.chunk.js.map",
+    "main.js": "/static/js/main.adc9b4b9.chunk.js",
+    "main.js.map": "/static/js/main.adc9b4b9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.84cab69b.js",
     "runtime-main.js.map": "/static/js/runtime-main.84cab69b.js.map",
     "static/js/2.32ba54d4.chunk.js": "/static/js/2.32ba54d4.chunk.js",
@@ -14,15 +14,15 @@
     "static/js/2.32ba54d4.chunk.js.LICENSE.txt": "/static/js/2.32ba54d4.chunk.js.LICENSE.txt",
     "static/media/avatar.414a1246.jpg": "/static/media/avatar.414a1246.jpg",
     "static/media/front-end-illustration.26c10e3b.png": "/static/media/front-end-illustration.26c10e3b.png",
-    "static/media/mal-redesign-detail-page.7bb9f2df.png": "/static/media/mal-redesign-detail-page.7bb9f2df.png",
-    "static/media/mal-redesign-main-page.712d7722.png": "/static/media/mal-redesign-main-page.712d7722.png",
-    "static/media/shield-database-detail-page.c2c8af0d.png": "/static/media/shield-database-detail-page.c2c8af0d.png",
-    "static/media/shield-database-main-page.1330ccd7.png": "/static/media/shield-database-main-page.1330ccd7.png"
+    "static/media/mal-redesign-detail-page.3ca000fd.png": "/static/media/mal-redesign-detail-page.3ca000fd.png",
+    "static/media/mal-redesign-main-page.ffc53b59.png": "/static/media/mal-redesign-main-page.ffc53b59.png",
+    "static/media/shield-database-detail-page.a7e73e85.png": "/static/media/shield-database-detail-page.a7e73e85.png",
+    "static/media/shield-database-main-page.2094efa8.png": "/static/media/shield-database-main-page.2094efa8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.84cab69b.js",
     "static/js/2.32ba54d4.chunk.js",
     "static/css/main.c3667f93.chunk.css",
-    "static/js/main.7d385b11.chunk.js"
+    "static/js/main.adc9b4b9.chunk.js"
   ]
 }
