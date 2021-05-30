@@ -17,7 +17,8 @@ export default function useVisibility<T>(
     }
     const {bottom, height }= currentElement.current.getBoundingClientRect()
     const middle = bottom - (height / 2)
-    setIsVisible(middle + offset >= 0 && middle - offset <= window.innerHeight)
+    //setIsVisible(middle + offset >= 0 && middle - offset <= window.innerHeight)
+    setIsVisible(middle - offset <= window.innerHeight)
   }
 
   useEffect(() => {
