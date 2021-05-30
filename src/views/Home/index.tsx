@@ -1,46 +1,23 @@
-import { useRef, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { useHistory } from 'react-router';
+import { Button, Col, Row, Typography, Avatar } from 'antd';
+import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiReact, SiRedux, SiStyledComponents, SiNodeDotJs, SiPostgresql, SiMongodb } from 'react-icons/si';
+import { FaLess } from 'react-icons/fa';
+import { AiOutlineAntDesign, AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
 
 import {
-  BannerCarousel,
-  Carousel,
-  AnimeCardsSection,
-  StoryCardsSection,
-  AnimeCard,
-  ExperienceCard,
-  Animated
+  Animated,
+  ExperienceCard
 } from 'components';
 import './style.less';
-import {
-  selectFeaturedNewsList,
-  getFeaturedNewsList
-} from 'store/news'
-import {
-  selectCurrentSeason,
-  selectTopAiringAnimes,
-  getCurrentSeason,
-  getTopAiringAnimes
-} from 'store/anime'
-import { Button, Col, Divider, Row, Skeleton, Steps, Typography, Progress } from 'antd';
 import { useScroll, useWindowSize } from 'hooks';
 import { windowSizes } from 'consts';
 import { avatar, frontEndIllustration, malRedesignDetailPage, malRedesignMainPage, shieldDatabaseDetailPage, shieldDatabaseMainPage } from 'assets/images';
-import Avatar from 'antd/lib/avatar/avatar';
 import { navbarLinks, experiences, toolImages } from './consts';
-import { SiTypescript, SiJavascript, SiCss3, SiHtml5, SiReact, SiRedux, SiStyledComponents, SiNodeDotJs, SiPostgresql, SiMongodb } from 'react-icons/si';
-import { FaGithub, FaLess } from 'react-icons/fa';
-import { AiOutlineAntDesign, AiOutlineMail, AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiFillMail } from 'react-icons/ai';
-import { useVisibility } from 'hooks';
 
 const { Title, Text, Paragraph, Link } = Typography
-const { Step } = Steps
 
 const Home = () => {
   const { scrollY, scrollDirection } = useScroll()
   const { width } = useWindowSize()
-
-  const [isVisible, elementRef] = useVisibility<HTMLDivElement>()
 
   return (
     <div className='container'>
@@ -226,7 +203,6 @@ const Home = () => {
                     For now at least you can play with <Text className='wrap-word'>the search page. 😄</Text><br></br><br></br>
                     I'm planning to continue developing at least for authorization and <Text className='wrap-word'>some CRUD action. 💪</Text>
                   </Paragraph>
-                  {/*<Link className='portfolio-github-link'><AiFillGithub/></Link>*/}
                 </Animated>
               </Col>
             </Row>
@@ -248,12 +224,9 @@ const Home = () => {
                     This is my exercise back when <Text className='wrap-word'>I first learn React.</Text><br></br>
                     I just display data from a free API. 😁
                   </Paragraph>
-                  {/*<Link className='portfolio-github-link'><AiFillGithub/></Link>*/}
                 </Animated>
               </Col>
             </Row>
-            {/*<Text className='typography-block mb-1'>Plus, this personal web also counts as a portfolio. 😉</Text>*/}
-            {/*<Link className='portfolio-github-link'><AiFillGithub/></Link>*/}
           <p></p>
         </div>
       </div>
