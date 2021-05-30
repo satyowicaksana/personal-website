@@ -192,16 +192,16 @@ const Home = () => {
                 <Animated animation='fade'>
                   <Paragraph>
                     This is a simple website to show <Text className='wrap-word'>what I can do in web development.</Text><br></br>
-                    The concept is a redesign of <Link strong href='https://myanimelist.net/' target='_blank'>MyAnimeList</Link>, <Text className='wrap-word'>an anime database</Text> <Text className='wrap-word'>and community website.</Text><br></br>
-                    I got the design inspiration from other <Link href='https://anilist.co/' target='_blank'>similar site</Link> <Text className='wrap-word'>and from <Link href='https://dribbble.com/shots/14879802-MyAnimeList-Website-Redesign' target='_blank'>dribbble</Link>.</Text><br></br><br></br>
+                    The concept is a redesign of <Link strong href='https://myanimelist.net/' target='_blank'>MyAnimeList</Link>, <Text className='wrap-word'>an anime database website.</Text><br></br>
+                    I got the design inspiration from <Link href='https://anilist.co/' target='_blank'>similar sites</Link> <Text className='wrap-word'>and <Link href='https://dribbble.com/shots/14879802-MyAnimeList-Website-Redesign' target='_blank'>dribbble</Link>.</Text><br></br><br></br>
                     I use <Link strong href='https://jikan.docs.apiary.io/' target='_blank'>Jikan API</Link> for the anime data and add some data with web scraping using Node. 😎<br></br><br></br>
                   </Paragraph>
                 </Animated>
                 <Animated animation='fade'>
                   <Paragraph className='mb-1'>
-                    As for now, I'm only done with displaying data in <Link>home page</Link>, <Link>search page</Link>, and <Link>detail page</Link>.<br></br>There's a <Link>register page</Link> but the <Text className='wrap-word'>authorization feature</Text> <Text className='wrap-word'>isn't done yet. 😅</Text><br></br>
-                    For now at least you can play with <Text className='wrap-word'>the search page. 😄</Text><br></br><br></br>
-                    I'm planning to continue developing at least for authorization and <Text className='wrap-word'>some CRUD action. 💪</Text>
+                    As for now, I'm only done with displaying and searching data.<br></br>
+                    There's a <Link>register page</Link> but the <Text className='wrap-word'>authorization feature</Text> <Text className='wrap-word'>isn't done yet. 😅</Text><br></br>
+                    I'm planning to continue developing for a simple authorization and <Text className='wrap-word'>some CRUD action. 💪</Text>
                   </Paragraph>
                 </Animated>
               </Col>
