@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mal-redesign/static/css/main.7643b897.chunk.css",
+    "main.css": "/mal-redesign/static/css/main.c667018e.chunk.css",
     "main.js": "/mal-redesign/static/js/main.a3d64d28.chunk.js",
     "main.js.map": "/mal-redesign/static/js/main.a3d64d28.chunk.js.map",
     "runtime-main.js": "/mal-redesign/static/js/runtime-main.a133de16.js",
@@ -10,7 +10,7 @@
     "static/js/3.27e60b72.chunk.js": "/mal-redesign/static/js/3.27e60b72.chunk.js",
     "static/js/3.27e60b72.chunk.js.map": "/mal-redesign/static/js/3.27e60b72.chunk.js.map",
     "index.html": "/mal-redesign/index.html",
-    "static/css/main.7643b897.chunk.css.map": "/mal-redesign/static/css/main.7643b897.chunk.css.map",
+    "static/css/main.c667018e.chunk.css.map": "/mal-redesign/static/css/main.c667018e.chunk.css.map",
     "static/js/2.9fcc3499.chunk.js.LICENSE.txt": "/mal-redesign/static/js/2.9fcc3499.chunk.js.LICENSE.txt",
     "static/media/avatar.366ab30d.jpg": "/mal-redesign/static/media/avatar.366ab30d.jpg",
     "static/media/front-end-illustration.26c10e3b.png": "/mal-redesign/static/media/front-end-illustration.26c10e3b.png",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.a133de16.js",
     "static/js/2.9fcc3499.chunk.js",
-    "static/css/main.7643b897.chunk.css",
+    "static/css/main.c667018e.chunk.css",
     "static/js/main.a3d64d28.chunk.js"
   ]
 }
