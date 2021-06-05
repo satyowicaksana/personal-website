@@ -202,7 +202,7 @@ const Home = () => {
                 <Animated animation='fade'>
                   <Paragraph className='mb-1'>
                     As for now, I'm only done with displaying and searching data.<br></br>
-                    There's a <Link>register page</Link> but the <Text className='wrap-word'>authorization feature</Text> <Text className='wrap-word'>isn't done yet. 😅</Text><br></br>
+                    There's a register page but the <Text className='wrap-word'>authorization feature</Text> <Text className='wrap-word'>isn't done yet. 😅</Text><br></br>
                     I'm planning to continue developing for a simple authorization and <Text className='wrap-word'>some CRUD action. 💪</Text>
                   </Paragraph>
                 </Animated>
