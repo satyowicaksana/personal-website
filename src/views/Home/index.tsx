@@ -174,7 +174,7 @@ const Home = () => {
             <Row align='middle' wrap={width <= windowSizes.sm.max} gutter={40} className='mb-5'>
               <Col xs={24} md={8} className='sm-mb-2'>
                 <Animated animation='fade scaled'>
-                  <div onClick={() => window.open('https://myanimelist-redesign.firebaseapp.com/', '_blank')} className='portfolio-image-container mal-redesign sm-mb-2'>
+                  <div onClick={() => window.open('https://mal-redesign.satyowicaksana.com/', '_blank')} className='portfolio-image-container mal-redesign sm-mb-2'>
                     <img src={malRedesignMainPage} alt='' className='portfolio-image main'/>
                     <img src={malRedesignDetailPage} alt='' className='portfolio-image detail'/>
                   </div>
@@ -182,7 +182,14 @@ const Home = () => {
               </Col>
               <Col>
                 <Animated animation='fade'>
-                  <Title level={5} className='mb-2'>MyAnimeList Redesign</Title>
+                  <Row gutter={8} className='mb-2'>
+                    <Col>
+                      <Title level={5}>MyAnimeList Redesign</Title>
+                    </Col>
+                    <Col>
+                      <Title level={5}><Link href='https://github.com/satyowicaksana/mal-redesign' target='_blank'><AiFillGithub/></Link></Title>
+                    </Col>
+                  </Row>
                 </Animated>
                 <Animated animation='fade'>
                   <Paragraph>
@@ -212,7 +219,14 @@ const Home = () => {
               </Col>
               <Col>
                 <Animated animation='fade'>
-                  <Title level={5} className='mb-2'>SHIELD Database</Title>
+                  <Row gutter={8} className='mb-2'>
+                    <Col>
+                      <Title level={5}>SHIELD Database</Title>
+                    </Col>
+                    <Col>
+                      <Title level={5}><Link href='https://github.com/satyowicaksana/react-challenge' target='_blank'><AiFillGithub/></Link></Title>
+                    </Col>
+                  </Row>
                 </Animated>
                 <Animated animation='fade'>
                   <Paragraph className='mb-1'>
