@@ -184,7 +184,7 @@ const Home = () => {
                 <Animated animation='fade'>
                   <Row gutter={8} className='mb-2'>
                     <Col>
-                      <Title level={5}>MyAnimeList Redesign</Title>
+                      <Title level={5}><Link href='https://mal-redesign.satyowicaksana.com/' target='_blank'>MyAnimeList Redesign</Link></Title>
                     </Col>
                     <Col>
                       <Title level={5}><Link href='https://github.com/satyowicaksana/mal-redesign' target='_blank'><AiFillGithub/></Link></Title>
@@ -221,7 +221,7 @@ const Home = () => {
                 <Animated animation='fade'>
                   <Row gutter={8} className='mb-2'>
                     <Col>
-                      <Title level={5}>SHIELD Database</Title>
+                      <Title level={5}><Link href='https://shield-database.firebaseapp.com/' target='_blank'>SHIELD Database</Link></Title>
                     </Col>
                     <Col>
                       <Title level={5}><Link href='https://github.com/satyowicaksana/react-challenge' target='_blank'><AiFillGithub/></Link></Title>
